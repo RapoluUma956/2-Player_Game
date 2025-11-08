@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memory Card Game - 2 Players</title>
+  <link rel="stylesheet" href="memory_game_easy.css">
+</head>
+<body>
+  <div class="msg-container hide">
+    <p id="msg">Winner</p>
+    <div class="btns">
+      <button class="btn" id="newgame-btn" onclick="resetGame()">New Game</button>
+      <a href="../../../index.html">
+        <button class="btn" id="back-btn">Back</button>
+      </a>        
+      </div>
+  </div>
+  <main>
+  <div class="game-container">
+    <h1>✨🎮 Memory Card Game (4x4) 🎮✨</h1>
+    <div class="scoreboard">
+      <div id="player1" class="player active">Player 1: <span id="score1">0</span></div>
+      <div id="player2" class="player">Player 2: <span id="score2">0</span></div>
+    </div>
+    <div class="grid" id="game-grid"></div>
+    <div class="controls">
+      <button class="btn" id="reset-btn" onclick="resetGame()">Reset Game</button>
+      <a href="../../../index.html">
+        <button class="btn" id="back-btn">Back</button>
+      </a>
+    </div>
+    <div class="winner" id="winner"></div>
+  </div>
+  </main>
+  <script src="memory_game_easy.js"></script>
+</body>
+</html>
